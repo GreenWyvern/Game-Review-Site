@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+      <siteMapNode url="Default.aspx" title="Main Page"  description="" > 
+        <siteMapNode url="Latest.aspx" title="Lastest Reviews"  description="" />
+        <siteMapNode url="Submit.aspx" title="Write A Review"  description="" />
+        <siteMapNode url="Search.aspx" title="Search For Reviews"  description="" />
+      </siteMapNode>
+</siteMap>

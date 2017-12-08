@@ -98,6 +98,8 @@
     <Content Include="App_Data\ReviewDB_log.ldf">
       <DependentUpon>ReviewDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Latest.aspx" />
+    <Content Include="MainStyle.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -108,6 +110,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
@@ -122,6 +125,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Latest.aspx.cs">
+      <DependentUpon>Latest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Latest.aspx.designer.cs">
+      <DependentUpon>Latest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

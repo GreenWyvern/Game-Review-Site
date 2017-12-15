@@ -2,4 +2,4 @@
 * text=auto
 
 #Language Override
-.rb linguist-language=ASP
+*.rb linguist-language=ASP

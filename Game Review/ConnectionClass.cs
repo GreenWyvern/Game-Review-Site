@@ -13,7 +13,7 @@ namespace Game_Review
 
         static ConnectionClass()
         {
-            cn = new SqlConnection(@"Data Source=PR-A311-21\SQLSERVER2014;Initial Catalog=InfoDB;Integrated Security=True");
+            cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\ReviewDB.mdf;Integrated Security=True");
         }
 
         public static void AddInfo(info info)

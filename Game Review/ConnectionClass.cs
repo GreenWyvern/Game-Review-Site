@@ -18,8 +18,8 @@ namespace Game_Review
 
         public static void AddInfo(info info)
         {
-            string query = string.Format(@"Insert into tblInfo Values ('{0}', '{1}', '{2}', '{3}', '{4}')",
-              info.userID, info.userName, info.email, info.fakePassword, info.newsletterSub);
+            string query = string.Format(@"Insert into Reviews Values ('{0}', '{1}', '{2}', '{3}', '{4}')",
+              info.reviewID, info.userID, info.gameID, info.reviewContent, info.reviewDate);
             cmd = new SqlCommand(query, cn);
 
             try
@@ -32,5 +32,7 @@ namespace Game_Review
                 cn.Close();
             }
         }
+
+        
     }
 }

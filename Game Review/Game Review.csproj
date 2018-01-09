@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -111,6 +112,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Search.aspx" />
+    <Content Include="Write.aspx" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +144,13 @@
     </Compile>
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Write.aspx.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Write.aspx.designer.cs">
+      <DependentUpon>Write.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

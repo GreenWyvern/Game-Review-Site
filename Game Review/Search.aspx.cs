@@ -7,45 +7,35 @@ using System.Web.UI.WebControls;
 
 namespace Game_Review
 {
-    public partial class Search : System.Web.UI.Page
+    public partial class Search1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if (!IsPostBack)
+            //{
+            //    SqlDataSource SqlDataSource2 = new SqlDataSource();
+            //    SqlDataSource2.ID = "SqlDataSource2";
+            //    this.Page.Controls.Add(SqlDataSource2);
+            //    SqlDataSource2.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ReviewsConnection"].ConnectionString;
+            //    SqlDataSource2.SelectCommand = "SELECT gm.gameName AS 'Game', us.userName AS 'User', re.reviewContent AS 'Review', reviewDate 'Date Submitted' FROM Games gm, Users us, Reviews re WHERE re.userID = us.userID AND re.gameID = gm.gameID ORDER BY re.reviewDate DESC";
+            //    GridView2.DataSource = SqlDataSource2;
+            //    GridView2.DataBind();
+            //}
+
         }
 
         protected void saveButt_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int userIdBTN = Convert.ToInt32(userIDbox.Text);
-                string userNameBTN = userNamebox.Text;
-                string emailBTN = emailbox.Text;
-                string fakePasswordBTN = fakePasswordbox.Text;
-                bool newsletterSubBTN = Convert.ToBoolean(newsletterSubbox.Text);
+            
+                SqlDataSource SqlDataSource2 = new SqlDataSource();
+                SqlDataSource2.ID = "SqlDataSource2";
+                this.Page.Controls.Add(SqlDataSource2);
+                SqlDataSource2.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ReviewsConnection"].ConnectionString;
+                SqlDataSource2.SelectCommand = string.Format("SELECT gm.gameName AS 'Game', us.userName AS 'User', re.reviewContent AS 'Review', reviewDate 'Date Submitted' FROM Games gm, Users us, Reviews re WHERE re.userID = us.userID AND re.gameID = gm.gameID AND gm.gameName = '{0}' ORDER BY re.reviewDate DESC", gameNamebox.Text);
+                GridView2.DataSource = SqlDataSource2;
+                GridView2.DataBind();
 
-                info infoSaveBTN = new info(userIdBTN, userNameBTN, emailBTN, fakePasswordBTN, newsletterSubBTN);
-                ConnectionClass.AddInfo(infoSaveBTN);
-                saveStatus.Text = "Uploaded Successfully!";
-            }
-            catch
-            {
-                saveStatus.Text = "Upload Failed!";
-            }
-        }
-    }
-
-    public class info
-    {
-        public int userID { get; set; }
-        public string userName { get; set; }
-        public string email { get; set; }
-        public string fakePassword { get; set; }
-        public bool newsletterSub { get; set; }
-
-        public info(int userID, string userName, string email, string fakePassword, bool newsletterSub)
-        {
 
         }
     }
-
 }

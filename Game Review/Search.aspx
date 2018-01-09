@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="Game_Review.Search" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="Game_Review.Search1" %>
 
 <!DOCTYPE html>
 
@@ -8,36 +8,36 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-
-        <table>
+        <div>
+            <table>
             <tr>
-                <td>userID: </td>
-                <td><asp:TextBox ID="userIDbox" runat="server"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td>userName</td>
-                <td><asp:TextBox ID="userNamebox" runat="server"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td>email: </td>
-                <td><asp:TextBox ID="emailbox" runat="server"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td>fakePassword: </td>
-                <td><asp:TextBox ID="fakePasswordbox" runat="server"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td>newsletterSub</td>
-                <td><asp:CheckBox ID="newsletterSubbox" runat="server" /></td>
+                <td>gameName: </td>
+                <td><asp:TextBox ID="gameNamebox" runat="server"></asp:TextBox></td>
             </tr>
         </table>
 
-        <br />
-
         <asp:Button ID="saveButt" runat="server" Text="Submit" OnClick="saveButt_Click" /> <br />
         <asp:Label ID="saveStatus" runat="server" Text="[Uh]"></asp:Label>
-    </div>
+
+        
+
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" >
+            <Columns>
+                <asp:BoundField DataField="Game" HeaderText="Game" SortExpression="Game" />
+                <asp:BoundField DataField="User" HeaderText="User" SortExpression="User" />
+                <asp:BoundField DataField="Review" HeaderText="Review" SortExpression="Review" />
+                <asp:BoundField DataField="Date Submitted" HeaderText="Date Submitted" SortExpression="Date Submitted" />
+            </Columns>
+        </asp:GridView>
+        
+
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ReviewsConnection %>" SelectCommand="SELECT gm.gameName AS 'Game', us.userName AS 'User', re.reviewContent AS 'Review', reviewDate 'Date Submitted'
+        FROM Games gm, Users us, Reviews re
+        WHERE re.userID = us.userID AND re.gameID = gm.gameID
+        ORDER BY re.reviewDate DESC"></asp:SqlDataSource>
+
+
+        </div>
     </form>
 </body>
 </html>

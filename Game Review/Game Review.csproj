@@ -95,6 +95,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adRotator.xml" />
+    <Content Include="Ads\birb_kopia.png" />
+    <Content Include="Ads\bread_kopia.png" />
     <Content Include="App_Data\ReviewDB.mdf" />
     <Content Include="App_Data\ReviewDB_log.ldf">
       <DependentUpon>ReviewDB.mdf</DependentUpon>

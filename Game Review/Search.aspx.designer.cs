@@ -22,6 +22,15 @@ namespace Game_Review {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// adrotatorControl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.AdRotator adrotatorControl;
+        
+        /// <summary>
         /// gameNamebox control.
         /// </summary>
         /// <remarks>
@@ -31,22 +40,31 @@ namespace Game_Review {
         protected global::System.Web.UI.WebControls.TextBox gameNamebox;
         
         /// <summary>
-        /// saveButt control.
+        /// gameSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button saveButt;
+        protected global::System.Web.UI.WebControls.Button gameSearch;
         
         /// <summary>
-        /// saveStatus control.
+        /// userNamebox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label saveStatus;
+        protected global::System.Web.UI.WebControls.TextBox userNamebox;
+        
+        /// <summary>
+        /// userSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button userSearch;
         
         /// <summary>
         /// GridView2 control.
@@ -56,6 +74,24 @@ namespace Game_Review {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView2;
+        
+        /// <summary>
+        /// sitemapSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapDataSource sitemapSource;
+        
+        /// <summary>
+        /// treeviewControl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TreeView treeviewControl;
         
         /// <summary>
         /// SqlDataSource2 control.

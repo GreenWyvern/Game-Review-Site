@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Ads/birb_kopia.png</ImageUrl>
+    <NavigateUrl>https://www.centennialcollege.ca/</NavigateUrl>
+    <TargetUrl>_blank</TargetUrl>
+    <AlternateText>Bird Leash</AlternateText>
+    <Keywork>wows</Keywork>
+    <Impression>Bird</Impression>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Ads/bread_kopia.png</ImageUrl>
+    <NavigateUrl>https://www.centennialcollege.ca/</NavigateUrl>
+    <TargetUrl>_blank</TargetUrl>
+    <AlternateText>Bread</AlternateText>
+    <Keywork>Bread</Keywork>
+    <Impression>1</Impression>
+  </Ad>
+</Advertisements>
+

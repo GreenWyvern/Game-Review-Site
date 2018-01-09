@@ -4,11 +4,13 @@
     margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-#LatestGrid, .stuff
+#LatestGrid, .stuff, #GridView2
 {
-    width: 700px;
+    width: 690px;
 }
-#treeviewControl
-{
+#treeviewControl {
+    float: left;
+}
+#adrotatorControl {
     float: right;
 }

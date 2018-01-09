@@ -31,6 +31,15 @@ namespace Game_Review {
         protected global::System.Web.UI.WebControls.AdRotator adrotatorControl;
         
         /// <summary>
+        /// LatestGrid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView LatestGrid;
+        
+        /// <summary>
         /// sitemapSource control.
         /// </summary>
         /// <remarks>
@@ -47,5 +56,14 @@ namespace Game_Review {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TreeView treeviewControl;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

@@ -10,7 +10,11 @@
 }
 #treeviewControl {
     float: left;
+    margin-top: 10px;
 }
 #adrotatorControl {
     float: right;
+}
+h1{
+    color: #0e326d;
 }

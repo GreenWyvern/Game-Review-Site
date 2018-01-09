@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
             <h1>Search for reviews</h1>
-            <asp:AdRotator ID="adrotatorControl" runat="server" AdvertisementFile="~/adRotator.xml"  Width="220" float="right"/>
+            <asp:AdRotator ID="adrotatorControl" runat="server" AdvertisementFile="~/adRotator.xml"  Width="210" float="right"/>
             <table>
             <tr>
                 <td>Search by Game Name: </td>

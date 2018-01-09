@@ -18,7 +18,7 @@ namespace Game_Review
 
         public static void AddInfo(info info)
         {
-            string query = string.Format(@"Insert into Reviews Values ('{0}', '{1}', '{2}', '{3}', '{4}')",
+            string query = string.Format(@"Insert into Reviews Values ({0}, {1}, {2}, '{3}', '{4}')",
               info.reviewID, info.userID, info.gameID, info.reviewContent, info.reviewDate);
             cmd = new SqlCommand(query, cn);
 
